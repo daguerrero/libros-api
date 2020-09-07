@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "6d31bcda-da12-4a9f-9e9f-c7671cbc309b",
+		"name": "Libros API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/libros",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/libros/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"libros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1\",\n\t\"titulo\": \"El Principito\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/libros",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"2\",\n\t\"nombre\": \"El señor de los anillos\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/libros/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"libros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/libros/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"libros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hola Mundo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/holamundo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"holamundo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "11e3dc68-50ed-4319-9d3b-2655043404d9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ca99e18f-b7a2-46ad-bb3c-6b1d21e24f51",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
